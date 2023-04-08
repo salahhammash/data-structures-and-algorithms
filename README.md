@@ -2,7 +2,7 @@
 
 | Challenges |      Are      |
 | ---------- | :-----------: |
-| Class 01   | [Class 01](./assest/class-01.jpeg)  |
-| Class 02   | [Class 02](./assest/class-02.jpeg)  |
+| Class 01   | [Class 01](./class-01.md)  |
+| Class 02   | [Class 02](./class2.md)  |
 
 
