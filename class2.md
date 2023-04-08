@@ -5,7 +5,7 @@ create a method that insert a value to the array that i have & give me a new arr
 
 
 ## Whiteboard Process
-[Class 02](./assest/class-02.jpeg)
+![Class 02](./assest/class-02.jpeg)
 
 ## Approach & Efficiency
 i use for loop 
