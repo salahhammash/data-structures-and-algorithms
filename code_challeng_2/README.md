@@ -3,7 +3,7 @@
 create a method that insert a value to the array that i have & give me a new array that have the new value but the value should be in the middle of this array 
 
 
-
+  
 ## Whiteboard Process
 ![Class 02](./assest/class-02.jpeg)
 
