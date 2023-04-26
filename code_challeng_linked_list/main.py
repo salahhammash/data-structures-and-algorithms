@@ -7,10 +7,11 @@ if __name__ == '__main__':
       linked_list.insert('B')
       linked_list.insert('C')
       linked_list.append('D')
-      linked_list.insert_after('E','F')
-      linked_list.insert_before('X','Z')
+      linked_list.append('E')
+      linked_list.insert_after('A','f')
+      linked_list.insert_before('C','g')
+     
       
-
       print(linked_list)
+      print(linked_list.count)
 
-      print(linked_list.includes('Y'))

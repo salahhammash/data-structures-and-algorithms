@@ -3,40 +3,44 @@ class Node:
         self.value=value
         self.next = None
 
-
 class LinkedList:
     def __init__(self):
         self.head = None
 
-    def insert(self,value):
-        """
-        this function add the new node to the beggining of the list as the head of the list 
-           """
-        node =Node(value)
-        if self.head == None:
-            self.head = node 
-        else:
-            node.next = self.head
-            self.head = node        
+    count = 0    
 
-    
+    def insert (self,value):
+           """
+           this function add the new node to the beggining of the list as the head of the list 
+           """
+           node = Node(value) 
+           LinkedList.count +=1
+           if self.head == None:
+                self.head = node
+           else:
+                node.next = self.head
+                self.head = node
+
     def includes (self,key):
-        """
-        this function check if the list have the key in it 
-        """ 
-        temp = self.head
-        if temp is None:
+         """
+         this function check if the list have the key in it 
+         """
+         
+         temp = self.head
+         if temp is None:
               return False
-        while temp is not None:
+         while temp is not None:
               if temp.value == key:
                    return True
               temp = temp.next
-        return False
-
+         if temp is None:
+              return False
+         
     def append(self,value):
         """
         This function add a node to the end of the linked list 
         """
+        LinkedList.count +=1
         node = Node(value)
         
         if self.head is None:
@@ -46,11 +50,15 @@ class LinkedList:
             while current.next is not None:
                 current = current.next
             current.next = node
+    
+           
+   
 
     def insert_after(self,target,value):
          """
          this function insert a node with the given value after the target value if it exists in the linked list
          """
+         LinkedList.count +=1
          if self.includes(target):
             node = Node(value)
             if self.head == None :
@@ -64,12 +72,14 @@ class LinkedList:
               node.next = target.next
               target.next = node
          else:
-             print("this target value does not exists")
+             print("this target value does not exists")     
+
 
     def insert_before(self,target,value):
          """
          this function insert a node with the given value before the target value if it exists in the linked list
          """
+         LinkedList.count +=1
          if self.includes(target):
             node = Node(value)
             if self.head == None or self.head.value == target:
@@ -83,10 +93,13 @@ class LinkedList:
               node.next = target.next
               target.next = node
          else:
-             print("this target value does not exists")               
-     
-         
-    def __tostring__(self):
+             print("this target value does not exists")    
+   
+                      
+                      
+
+           
+    def tostring(self):
         output = ""
         if self.head is None:
             output = "Empty LinkeList"
@@ -96,6 +109,6 @@ class LinkedList:
                 output += f'{current.value} -> '
                 current = current.next
             
-            output += " None"
+            output += " Null"
         return output  
              
