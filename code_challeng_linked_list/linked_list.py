@@ -86,7 +86,7 @@ class LinkedList:
              print("this target value does not exists")               
      
          
-    def __str__(self):
+    def __tostring__(self):
         output = ""
         if self.head is None:
             output = "Empty LinkeList"
