@@ -14,4 +14,7 @@ if __name__ == '__main__':
       
       print(linked_list)
       print(linked_list.count)
+      
+      print(linked_list.kthFromEnd(4))
+
 

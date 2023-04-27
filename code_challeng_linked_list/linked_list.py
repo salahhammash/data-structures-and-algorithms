@@ -95,7 +95,29 @@ class LinkedList:
          else:
              print("this target value does not exists")    
    
-                      
+    
+    def kthFromEnd(self,k):
+        if self.head is None:
+            return "Error : the linked list is empty"
+        elif k >= LinkedList.count:
+            return "Error : Your input can't be more than the length"  
+        elif k < 0 :
+            return "Error : only positive numbers are accepted!"
+        elif LinkedList.count == 1:
+            return self.head.value
+        else:        
+         pointer_one = self.head
+         pointer_two = self.head
+
+         for i in range(k):
+            pointer_two = pointer_two.next
+
+         while pointer_two.next is not None:
+           pointer_one = pointer_one.next
+           pointer_two = pointer_two.next
+
+         return pointer_one.value
+                           
                       
 
            
