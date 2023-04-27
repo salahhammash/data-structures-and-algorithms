@@ -12,7 +12,7 @@ big(o)
 ![add to the end ](./assest/add%20to%20th%20end%20.png)
 ![adding after ](./assest/adding%20after.png)
 ![add befor ](./assest/adding%20befor%20element.png)
-
+![kth](./assest/kth.png)
 
 ## Solution
 ///   -->
