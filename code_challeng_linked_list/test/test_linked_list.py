@@ -81,6 +81,80 @@ def test_16(AA):
     assert  expected == actual  
 
 
+def test_17():
+    ll=LinkedList()
+    ll.append("a")
+    ll.append("b")
+    ll.append("c") 
+    ll2=LinkedList()
+    ll2.append("1")
+    ll2.append("2")
+    ll2.append("3") 
+    excepted="a -> 1 -> b -> 2 -> c -> 3 ->  Null"
+    actual=LinkedList.tostring(ll.zip_list(ll,ll2))
+    assert actual == excepted 
+"""
+“Happy Path” where the first linked list is shorter
+"""
+def test_18():
+    ll=LinkedList()
+    ll.append("a")
+    ll.append("b")
+    ll2=LinkedList()
+    ll2.append("1")
+    ll2.append("2")
+    ll2.append("3") 
+    excepted="a -> 1 -> b -> 2 -> 3 ->  Null"
+    actual= LinkedList.tostring(ll.zip_list(ll,ll2))
+    assert actual == excepted   
+"""
+“Happy Path” where the second linked list is shorter
+"""
+def test_19():
+    ll=LinkedList()
+    ll.append("a")
+    ll.append("b")
+    ll.append("c") 
+    ll2=LinkedList()
+    ll2.append("1")
+    ll2.append("2")
+    excepted="a -> 1 -> b -> 2 -> c ->  Null"
+    actual=LinkedList.tostring(ll.zip_list(ll,ll2))
+    assert actual == excepted     
+"""
+“edge case 1” where the first linked list is empty 
+"""
+def test_20():
+    ll=LinkedList()
+    ll.append("a")
+    ll.append("b")
+    ll.append("c") 
+    ll2=LinkedList()
+    excepted="a -> b -> c ->  Null"
+    actual=LinkedList.tostring(ll.zip_list(ll,ll2))
+    assert actual == excepted
+"""
+“edge case 2” where the second linked list is empty 
+"""
+def test_21():
+    ll=LinkedList() 
+    ll2=LinkedList()
+    ll2.append("1")
+    ll2.append("2")
+    excepted="1 -> 2 ->  Null"
+    actual=LinkedList.tostring(ll.zip_list(ll,ll2))
+    assert actual == excepted   
+"""
+“edge case 3” where both linked lists are empty
+"""
+def test_22():
+    ll=LinkedList() 
+    ll2=LinkedList()
+    excepted="Both lists are empty"
+    actual=str(ll.zip_list(ll,ll2))
+    assert actual == excepted 
+
+
 @pytest.fixture
 def AA():
     AA = LinkedList()
@@ -97,3 +171,4 @@ def clean():
    
     """
     LinkedList.count = 0
+

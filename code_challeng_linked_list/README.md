@@ -13,6 +13,8 @@ big(o)
 ![adding after ](./assest/adding%20after.png)
 ![add befor ](./assest/adding%20befor%20element.png)
 ![kth](./assest/kth.png)
+![zip](./assest/linked_zip.png)
+
 
 ## Solution
 ///   -->
