@@ -139,6 +139,9 @@ class LinkedList:
     
              
     def zip_list (self,list1,list2):
+        """this function takes two linked list and zip them togather """
+
+        
         list1_head = list1.head                 
         list2_head = list2.head 
         if list1_head == None and list2_head == None: 
