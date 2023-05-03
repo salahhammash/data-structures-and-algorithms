@@ -241,5 +241,6 @@ def clean():
     will bleed over to other tests
    
     """
+
     LinkedList.count = 0
 
