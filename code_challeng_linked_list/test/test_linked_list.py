@@ -226,7 +226,7 @@ def test_27():
     assert actual == excepted 
 
 
-@pytest.fixture
+@pytest.fixture 
 def AA():
     AA = LinkedList()
     AA.insert('A')
