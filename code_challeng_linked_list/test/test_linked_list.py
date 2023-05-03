@@ -154,6 +154,77 @@ def test_22():
     actual=str(ll.zip_list(ll,ll2))
     assert actual == excepted 
 
+def test_23():
+    linked_list = LinkedList()
+
+    linked_list.insert('A')
+    linked_list.insert('B')
+    linked_list.insert('C')
+    linked_list.append('D')
+    linked_list.append('E')
+    linked_list.insert_after('A','f')
+    linked_list.insert_before('C','g')
+
+    excepted = "Error : Your input can't be more than the length"
+    actual = linked_list.kthFromEnd(7)    
+    assert actual == excepted 
+
+
+def test_24():
+    linked_list = LinkedList()
+
+    linked_list.insert('A')
+    linked_list.insert('B')
+    linked_list.insert('C')
+    linked_list.append('D')
+    linked_list.append('E')
+    linked_list.insert_after('A','f')
+    linked_list.insert_before('C','g')
+
+    excepted = "Error : Your input can't be more than the length"
+    actual = linked_list.kthFromEnd(8)    
+    assert actual == excepted 
+
+def test_25():
+    linked_list = LinkedList()
+
+    linked_list.insert('A')
+    linked_list.insert('B')
+    linked_list.insert('C')
+    linked_list.append('D')
+    linked_list.append('E')
+    linked_list.insert_after('A','f')
+    linked_list.insert_before('C','g')
+
+    excepted = "Error : only positive numbers are accepted!"
+    actual = linked_list.kthFromEnd(-1)    
+    assert actual == excepted     
+
+def test_26():
+    linked_list = LinkedList()
+
+    linked_list.insert('A')
+  
+    excepted = "A"
+    actual = linked_list.kthFromEnd(0)    
+    assert actual == excepted 
+
+def test_27():
+    linked_list = LinkedList()
+
+    
+    linked_list.insert('A')
+    linked_list.insert('B')
+    linked_list.insert('C')
+    linked_list.append('D')
+    linked_list.append('E')
+    linked_list.insert_after('A','f')
+    linked_list.insert_before('C','g')
+
+    excepted = "A"
+    actual = linked_list.kthFromEnd(3)    
+    assert actual == excepted 
+
 
 @pytest.fixture
 def AA():
