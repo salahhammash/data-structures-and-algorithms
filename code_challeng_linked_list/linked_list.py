@@ -79,7 +79,6 @@ class LinkedList:
          """
          this function insert a node with the given value before the target value if it exists in the linked list
          """
-         LinkedList.count +=1
          if self.includes(target):
             node = Node(value)
             if self.head == None or self.head.value == target:
@@ -121,22 +120,28 @@ class LinkedList:
                       
 
            
-    def tostring(self):
+    def __str__(self):
         output = ""
         if self.head is None:
             output = "Empty LinkeList"
         else:
             current = self.head
-            while(current):
+            while current is not None:
                 output += f'{current.value} -> '
                 current = current.next
             
             output += " Null"
-        return output  
+        return output
+    
+    def tostring(self):
+        return self.__str__()
     
     
              
     def zip_list (self,list1,list2):
+        """this function takes two linked list and zip them togather """
+
+        
         list1_head = list1.head                 
         list2_head = list2.head 
         if list1_head == None and list2_head == None: 
