@@ -5,6 +5,8 @@
 | calass-03   |[class-03](./code_challeng%20_3/README.md)        |
 | calass-04 |[Linked List](./code_challeng_linked_list/README.md)        |
 | calass-10 |[Stack & Queue](./code_challeng_stack_%26_Queue/REDME.md)        |
+| calass-11 |[stack-queue-pseudo](./stack_queue_pseudo/REDME.md)        |
+
 
 
   

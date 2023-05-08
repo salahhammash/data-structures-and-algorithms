@@ -21,6 +21,7 @@ class Stack:
             return temp.value
         else:
             return "Stack is empty"
+        
     def peek(self):
         if self.top:
             return self.top.value
@@ -35,15 +36,3 @@ class Stack:
         return self.size == 0
     
     
-    def __str__(self):
-        output = ""
-        if self.top is None:
-            output = "Empty Stack!"
-        else:
-            current = self.top
-            while(current):
-                output += f'{current.value} --> '
-                current = current.next
-            
-            output += " None"
-        return output  
