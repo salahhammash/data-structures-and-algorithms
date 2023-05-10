@@ -4,8 +4,8 @@ from animal_shelter.stack_queue_animal_shelter import AnimalShelter
 def test_1 (a):
     assert a.dequeue("cat") == {"species" : "cat" , "name": "cat1"}
 
-# def test_2 (a):
-#     assert a.dequeue("dog") == {"species" : "dog" , "name": "dog1"}
+def test_2 (a):
+    assert a.dequeue("dog") == {"species" : "dog" , "name": "dog1"}
 
 def test_3():
     b = AnimalShelter()
