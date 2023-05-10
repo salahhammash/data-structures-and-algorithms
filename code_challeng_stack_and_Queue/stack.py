@@ -8,6 +8,8 @@ class Stack:
         self.size = 0
 
     def push(self,value):
+        #this methoud will push the value to the top
+        
         node = Node(value)
         if self.top:
             node.next = self.top
@@ -15,6 +17,7 @@ class Stack:
         self.size += 1
 
     def pop(self):
+        #this methoud will remove the top of the class wich is the last value 
         if self.top is not None:
             temp = self.top
             self.top = self.top.next

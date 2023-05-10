@@ -6,6 +6,8 @@
 | calass-04 |[Linked List](./code_challeng_linked_list/README.md)        |
 | calass-10 |[Stack & Queue](./code_challeng_stack_%26_Queue/REDME.md)        |
 | calass-11 |[stack-queue-pseudo](./stack_queue_pseudo/REDME.md)        |
+| calass-12 |[stack-queue-animal-shelter](./animal_shelter/README.md)        |
+
 
 
 
