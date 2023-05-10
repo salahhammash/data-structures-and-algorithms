@@ -13,7 +13,7 @@ class PseudoQueue:
          #insert a value into class 
          self.stack1.push(value)
 
-    def dequeue(self,value):
+    def dequeue(self):
         if self.stack1.is_empty() and self.stack2.is_empty():
             return "Queue is empty"
         

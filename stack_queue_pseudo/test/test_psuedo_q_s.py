@@ -7,11 +7,11 @@ def test_PS_1 (AA):
 
 def test__PS_2():
     PQ = PseudoQueue()
-    assert PQ.dequeue() == "Pseude Queue is Empty!"
+    assert PQ.dequeue() ==  'Queue is empty'
 
 def test_PS_3(AA):
     
-    assert str(AA.stack1) == "A --> B --> C -->  None"
+    assert str(AA.stack1) == "C --> B --> A -->  None"
 
 def test_PS_4(AA):
     AA.dequeue()
