@@ -1,6 +1,7 @@
 from Node import Node
 
 class Stack:
+    """this class make a stack ,add to it ,remove from it ,get the top value,get the size and check if its empty """
 
     def __init__(self):
         self.top = None
@@ -35,4 +36,15 @@ class Stack:
     def is_empty(self):
         return self.size == 0
     
-    
+    def __str__(self):
+        output = ""
+        if self.top is None:
+            output = "Empty Stack!"
+        else:
+            current = self.top
+            while(current):
+                output += f'{current.value} --> '
+                current = current.next
+            
+            output += " None"
+        return output  

@@ -22,16 +22,18 @@ class PseudoQueue:
         
         elif self.stack1.is_empty() == False and self.stack2.is_empty() == True :
             a = self.stack1.get_size()
-            #get_size to know the length
+            #get_size to know the length to do loop throw it 
             for i in range(a):
-                # rang --> لعمل لووب على قد حجم الستاك 
+                # rang -->  لعمل لووب على قد حجم الستاك 
+                # نفس مبدأ عمل لعبة الرول دايسز بدي يجيبلي  6 ارقام مثلا بحددلو عددهم و بس هون حددتلو انه عددهم a 
                 b = self.stack1.pop()
                 self.stack2.push(b)
 
             return self.stack2.pop()
         
         
-       
+     
+
 
             
 
