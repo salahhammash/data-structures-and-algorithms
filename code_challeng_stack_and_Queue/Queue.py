@@ -1,4 +1,4 @@
-from Node import Node
+from code_challeng_stack_and_Queue.Node import Node
 
 class Queue:
 
