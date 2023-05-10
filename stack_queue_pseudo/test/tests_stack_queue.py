@@ -11,7 +11,7 @@ def test__PS_2():
 
 def test_PS_3(AA):
     
-    assert str(AA.stack1) == "C --> B --> A -->  None"
+    assert str(AA.stack1) == "A --> B --> C -->  None"
 
 def test_PS_4(AA):
     AA.dequeue()
