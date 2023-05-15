@@ -1,3 +1,6 @@
+
+
+
 def binary_search(arr, key):
     f = 0
     b = len(arr) - 1
