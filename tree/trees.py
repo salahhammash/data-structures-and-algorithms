@@ -8,6 +8,7 @@ class BinaryTree :
     
     def __init__(self):
         self.root = None
+       
 
     def pre_order(self,root,list1 = None):
         if list1 == None :
@@ -56,6 +57,7 @@ class BST(BinaryTree):
      """
     def __init__(self):
         self.root = None
+        # self.max = 0
 
     def add(self, root, value):
         if root is None:
@@ -71,7 +73,25 @@ class BST(BinaryTree):
                     root.left = Node(value)
                 else:
                     self.add(root.left, value)
-
+                    
+        
+                    
+                    
+    # def max_val(self,value):
+    #     max = 0
+    #     for i in range(len(value)):                
+    #         if value[i] > max:
+    #             max = value[i]
+    #     return max    
+    def max_value(self, root):
+        if root is None:
+            return None
+        elif root.right is None:
+            return root.value
+        else:
+            return self.max_value(root.right)            
+        
+        
     def contains(self, value, nodes):
         if nodes is None:
             return False
@@ -97,9 +117,13 @@ print(a.contains(1,a.root))
 print(a.contains(10,a.root))
 
 
-print(a.pre_order(a.root))
+# print(a.pre_order(a.root))
 print(a.in_order(a.root))
-print(a.post_order(a.root))
+# print(a.post_order(a.root))
+# print(a.max)
+# print(a.max_val(a.in_order(a.root)))
 
 print(a.contains(600,a.root))
+max_value = a.max_value(a.root)
+print(max_value)
 
