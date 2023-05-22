@@ -5,21 +5,39 @@ class AnimalShelter ():
     """
      
     def __init__(self):
-        self.cat = Queue()
-        self.dog = Queue()
+        self.pet = Queue()
+        
 
     def enqueue(self,animal):
-        if animal["species"] == "dog":
-            self.dog.enqueue(animal)
-        elif animal["species"] == "cat":
-            self.cat.enqueue(animal)
+        
+        self.pet.enqueue(animal)
+        
+        
 
-    def dequeue(self,pref):
+    def dequeue(self,pref):             
         if pref != "dog" and pref != "cat" :
-            return None        
-        elif pref == "dog" :
-            return  self.dog.dequeue()
-        elif pref == "cat" :
-            return  self.cat.dequeue()
+            return None       
+        
+        else :
+            a = self.pet.front
+            print(a.value["species"])
+            while a["species"] != pref:
+                a = a.next
+                
+                if a["species"] == pref:
+                    x = a["name"]
+                    self.pet.dequeue(a)
+                    return x
+                
+
+                
+aa = AnimalShelter() 
+aa.enqueue({"species" : "cat" , "name": "cat1"})     
+
+aa.dequeue("cat")
+           
+                
+
     
-    
+#  dog -> cat -> none 
+

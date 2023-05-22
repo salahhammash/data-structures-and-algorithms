@@ -7,6 +7,7 @@ class Queue:
     def __init__(self):
         self.front = None
         self.rear = None
+        self.size=0
 
     def enqueue(self,value):
             node = Node(value)
@@ -14,9 +15,11 @@ class Queue:
             if not self.rear:
                 self.front = node
                 self.rear = node
+                self.size +=1 
             else:
                 self.rear.next = node
                 self.rear = node
+                
 
     def dequeue(self):
  
@@ -26,10 +29,11 @@ class Queue:
         # if the queue contains only one node
         if self.front == self.rear:
             self.rear = None
-        
+
         temp = self.front
         self.front = self.front.next
         temp.next = None
+        self.size -=1
 
         return temp.value
     
@@ -40,6 +44,12 @@ class Queue:
     
     def is_empty(self):
         return self.front== None
+    
+    def get_size(self):
+        return self.size 
+    
+    
+    
 
     def __str__(self):
         output = ""

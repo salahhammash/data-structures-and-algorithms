@@ -21,4 +21,7 @@ def a():
     a.enqueue({"species" : "dog" , "name": "dog1"})
     a.enqueue({"species" : "dog" , "name": "dog2"})
     a.enqueue({"species" : "dog" , "name": "dog3"})
+    
+    a.dequeue({"species" : "dog" , "name": "dog3"})
+    
     return a   
