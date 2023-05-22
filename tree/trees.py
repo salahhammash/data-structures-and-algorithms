@@ -75,21 +75,18 @@ class BST(BinaryTree):
                     self.add(root.left, value)
                     
         
-                    
-                    
-    # def max_val(self,value):
-    #     max = 0
-    #     for i in range(len(value)):                
-    #         if value[i] > max:
-    #             max = value[i]
-    #     return max    
-    def max_value(self, root):
-        if root is None:
-            return None
-        elif root.right is None:
-            return root.value
-        else:
-            return self.max_value(root.right)            
+   # loop throw Nodes that inside the tree , then compare evry value with max  , if > max ==> max = value of node 
+
+    def max_val(self):
+        max = 0
+        in_ord= self.in_order(self.root)
+        for i in range(len(in_ord)):                
+            if in_ord[i] > max:
+                max = in_ord[i]
+        return max    
+    
+    
+               
         
         
     def contains(self, value, nodes):
@@ -111,7 +108,7 @@ a.add(a.root,95)
 a.add(a.root,10)
 a.add(a.root,30)
 a.add(a.root,25)
-a.add(a.root,40)
+a.add(a.root,400)
 a.add(a.root,63)
 print(a.contains(1,a.root))
 print(a.contains(10,a.root))
@@ -124,6 +121,7 @@ print(a.in_order(a.root))
 # print(a.max_val(a.in_order(a.root)))
 
 print(a.contains(600,a.root))
-max_value = a.max_value(a.root)
-print(max_value)
+print(a.max_val())
+
+
 
