@@ -149,30 +149,32 @@ class BST(BinaryTree):
 
 a = BST()
 # # a is inctance ( it has evry thing that inside BST )
-a.add(a.root,95)
-a.add(a.root,10)
-a.add(a.root,30)
-a.add(a.root,25)
-a.add(a.root,400)
-a.add(a.root,63)
+# a.add(a.root,5)
+# a.add(a.root,3)
+# a.add(a.root,2)
+# a.add(a.root,4)
+# a.add(a.root,7)
+# a.add(a.root,6)
+# a.add(a.root,8)
+
 # a.add(a.root,-95)
 # a.add(a.root,-10)
 # a.add(a.root,-30)
 # a.add(a.root,-25)
 # a.add(a.root,-400)
 # a.add(a.root,-63)
-print(a.contains(1,a.root))
-print(a.contains(10,a.root))
+# print(a.contains(1,a.root))
+# print(a.contains(10,a.root))
 
 
 # print(a.pre_order(a.root))
-print(a.in_order(a.root))
+# print(a.in_order(a.root))
 # print(a.post_order(a.root))
 # print(a.max)
 # print(a.max_val(a.in_order(a.root)))
 
-print(a.contains(600,a.root))
-print(a.max_val())
+# print(a.contains(600,a.root))
+# print(a.max_val())
 print(a.breadth_first(a.root))
 
 

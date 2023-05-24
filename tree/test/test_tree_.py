@@ -54,10 +54,16 @@ def test_8(aaa):
     expected = False    
     assert actual == expected
     
-# def test_9(aaa):
-#     actual == aaa.breadth_first(aaa.root)
-#     excepted = [95, 10, 400, 30, 25, 63]
-#     assert actual == excepted 
+def test_9(aaa):
+    actual = aaa.breadth_first(aaa.root)
+    excepted = [5, 3, 7, 2, 4, 6, 8]
+    assert actual == excepted 
+
+def test_10():
+    bf = BST()
+    actual = bf.breadth_first(bf.root)
+    excepted = []
+    assert actual == excepted    
 
 @pytest.fixture
 def aaa():
@@ -69,6 +75,5 @@ def aaa():
     aaa.add(aaa.root, 7)
     aaa.add(aaa.root, 6)
     aaa.add(aaa.root, 8)    
-    # aaa.breadth_first(aaa.root)
-    
+   
     return aaa
