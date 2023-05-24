@@ -6,6 +6,9 @@
 ![post_order](./assest/post%20order%20tree.png)
 ![add](./assest/add.jpg)
 ![find](./assest/find.jpg)
+<!-- ![max](./assest/max.jpg)
+![breadth_first](./assest/breadth_first.jpg) -->
+
 
 
 
@@ -57,6 +60,38 @@ class BinaryTree :
             list3.append(root.value) 
         return list3     
 
+
+     def max_val(self):
+    
+        max= self.root.value
+        
+        if self.root is None :
+            return "Empty Tree"   
+        
+        in_ord= self.in_order(self.root)
+        for i in range(len(in_ord)):                
+            if in_ord[i] > max:
+                max = in_ord[i]
+                
+        return max  
+
+
+    def breadth_first(self,node):
+        queue= Queue()
+        list_breadth = []
+        
+        if node is None :
+            return []
+        else:
+            queue.enqueue(node)
+        while queue.front:
+            node = queue.dequeue()
+            list_breadth.append(node.value)
+            if node.left :
+                queue.enqueue(node.left)
+            if node.right:
+                queue.enqueue(node.rigth)    
+        return list_breadth    
 
 
 class BST(BinaryTree):
