@@ -6,6 +6,9 @@
 ![post_order](./assest/post%20order%20tree.png)
 ![add](./assest/add.jpg)
 ![find](./assest/find.jpg)
+<!-- ![max](./assest/max.jpg)
+![breadth_first](./assest/breadth_first.jpg) -->
+
 
 
 

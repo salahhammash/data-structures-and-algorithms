@@ -53,7 +53,11 @@ def test_8(aaa):
     actual= aaa.contains(9,aaa.root) 
     expected = False    
     assert actual == expected
-
+    
+# def test_9(aaa):
+#     actual == aaa.breadth_first(aaa.root)
+#     excepted = [95, 10, 400, 30, 25, 63]
+#     assert actual == excepted 
 
 @pytest.fixture
 def aaa():
@@ -64,5 +68,7 @@ def aaa():
     aaa.add(aaa.root, 4)
     aaa.add(aaa.root, 7)
     aaa.add(aaa.root, 6)
-    aaa.add(aaa.root, 8)
+    aaa.add(aaa.root, 8)    
+    # aaa.breadth_first(aaa.root)
+    
     return aaa
