@@ -9,6 +9,8 @@
 | calass-12 |[stack-queue-animal-shelter](./animal_shelter/README.md)        |
 | calass-13 |[stack-queue-brackets](./stack_queue_bracket/README.md)        |
 | calass-15 |[Trees](./tree/README.md)        |
+| calass-26 |[insertion](./code%20challeng%2026/README.md)        |
+
 
 
 
