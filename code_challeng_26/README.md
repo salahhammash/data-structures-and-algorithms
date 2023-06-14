@@ -8,6 +8,9 @@
 
 > space ==> O(n)
 
+## Whiteboard Process
+![insertion sort](./assest/CC26.jpg)
+
 # Solution 
 
     def insert (sorted,value):
