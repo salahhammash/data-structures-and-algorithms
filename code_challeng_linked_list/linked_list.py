@@ -1,7 +1,11 @@
 class Node:
+    '''
+        this def to represent the node 
+    '''
     def __init__(self,value):
         self.value=value
         self.next = None
+
 
 class LinkedList:
     def __init__(self):
@@ -41,6 +45,7 @@ class LinkedList:
         This function add a node to the end of the linked list 
         """
         LinkedList.count +=1
+        
         node = Node(value)
         
         if self.head is None:
@@ -96,6 +101,25 @@ class LinkedList:
    
     
     def kthFromEnd(self,k):
+        '''
+        k = is the index of the number (its not the number itself )
+        the length of list by(counter) , then loop throw the list and return the value of counter --> then while counter - k != new counter ---> loop throw the array 
+        to count the total number (length linked list )
+        counter = 0
+        h = head 
+        while h
+            h = h.next 
+            counter +=1 
+        
+        h = head
+        new = 0
+        while counter - k != new 
+            new +=1 
+            h=h.next
+            
+        return h.value       
+                
+        '''
         if self.head is None:
             return "Error : the linked list is empty"
         elif k >= LinkedList.count:
@@ -172,3 +196,7 @@ class LinkedList:
 
 
         return list1 
+    
+    
+    
+    
