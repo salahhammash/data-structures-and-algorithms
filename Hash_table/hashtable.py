@@ -69,7 +69,7 @@ class HashTable:
                 for x in i :
                     keys_coll.append(x[0])
         return keys_coll            
-
+  
 # x = HashTable()
 # x.set('x',70)
 # x.set('a',20)
