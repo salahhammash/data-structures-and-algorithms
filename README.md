@@ -12,7 +12,9 @@
 | calass-26 |[insertion](./code_challeng_26/README.md)        |
 | calass-27 |[mergSort](./Merge_Sort/README.md)        |
 | calass-28 |[Sorting](./code_challeng_28/README.md)        |
-| calass-29 |[Hash Table](./Hash_table/README.md)        |
+| calass-30 |[Hash Table](./Hash_table/README.md)        |
+| calass-31 |[repeted word ](./code_challeng_31/README.md)        |
+
 
 
 
