@@ -30,7 +30,6 @@ def test_hashtable_keys(test_HT):
 @pytest.fixture
 def test_HT():
     hash_table = HashTable()
-    hash_table.set("A", 28)
     hash_table.set("A", 30)
     hash_table.set("N", 24)
     hash_table.set("B", 26)
