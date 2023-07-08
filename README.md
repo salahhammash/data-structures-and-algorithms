@@ -14,6 +14,8 @@
 | calass-28 |[Sorting](./code_challeng_28/README.md)        |
 | calass-30 |[Hash Table](./Hash_table/README.md)        |
 | calass-31 |[repeted word ](./code_challeng_31/README.md)        |
+| calass-32 |[tree_intersection ](./tree_intersection/README.md)        |
+
 
 
 
