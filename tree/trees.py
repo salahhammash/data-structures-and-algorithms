@@ -1,5 +1,11 @@
-from tree.node import Node
+# from tree.node import Node
 from code_challeng_stack_and_Queue.Queue import Queue
+
+class Node :
+    def __init__(self,value):
+        self.value = value
+        self.left = None
+        self.right = None
 
 class BinaryTree :
     """This Class creeate a tree where you can add nodes as leaf to it using root.left and root.right
