@@ -27,21 +27,27 @@ def left_join(H1, H2):
 if __name__ == "__main__":
     
     H1 = {
-          "age" : "27",
         "color": "red",
-          "name1": "salah",
+        #   "age" : "27",
+        #   "name1": "salah",
           
-          "name2": "salah2",
+        #   "name2": "salah2",
           
-          "aaaa":"dddd",
-          'car': "1"
+        "mustafa" :"aaaa",
+        
+        
+        #   "aaaa":"dddd",
+        #   'car': "1"
           }
+    
     H2 = {
         "color": "blue",
-          "age" : "29",
-          "name2": "salah2",
-          "cccc":"fff",
-          'car': 1
+        #   "age" : "29",
+        #   "name2": "salah3",
+        #   "cccc":"fff",
+        #   'car': 1
+        "mustafa1" :"bbbb",
+        
           
           
           }

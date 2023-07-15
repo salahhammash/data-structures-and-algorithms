@@ -31,8 +31,8 @@ def test_left_join_four():
     assert actual == expected
 
 def test_left_join_five():
-    H1 = {'test5': "1", 'answer5': "2"}
-    H2 = {'test5': 9, 'answer5': 9}
+    H1 = {'diligent': "employed", 'fond': "enamored"}
+    H2 = {'diligent': "idle", 'fond': "averse"}
     actual = left_join(H1 , H2)
-    expected = {'test5': ["1",9], 'answer5': ["2",9]}
+    expected = {'diligent': ["employed","idle"], 'fond': ["enamored","averse"]}
     assert actual == expected
