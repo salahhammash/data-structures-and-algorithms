@@ -1,8 +1,6 @@
 from Hash_table.hashtable import HashTable
 # from tree.node import Node
 
-
-
 def tree_intersection(b1,b2):
     '''
     find the intersection between 2 binary tree 
