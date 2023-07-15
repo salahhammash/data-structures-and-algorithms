@@ -11,7 +11,8 @@
 ---
 
 
-
+## Whiteboard Process 
+[Whiteboard Process](./assest/hash%20left%20join.png)
 ---
 
 ## Approach & Efficiency
