@@ -36,4 +36,17 @@ class Graph:
                 output += f'{edge.vertex} -----> '
             output += '\n'
         return output
-        
+    
+    def get_vertices(self):
+        """Return a list of all vertices in the graph."""
+        pass
+
+    def get_neighbours(self, vertex):
+        """Return a list of neighbors of a given vertex in the graph."""
+        pass    
+    def get_size(self):
+        """Return the number of vertices in the graph."""
+        pass
+    
+    def breadth_first():
+        pass 

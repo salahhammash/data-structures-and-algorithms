@@ -15,7 +15,7 @@
 | calass-30 |[Hash Table](./Hash_table/README.md)        |
 | calass-31 |[repeted word ](./code_challeng_31/README.md)        |
 | calass-32 |[tree_intersection ](./tree_intersection/README.md)        |
-| calass-33 |[hashmap-left-join ](./hashmap-left-join/README.md)        |
+| calass-33 |[hashmap-left-join ](./code_challeng_33/README.md)        |
 | calass-35 |[graph ](./graph/README.md)        |
 
 
