@@ -37,16 +37,27 @@ class Graph:
             output += '\n'
         return output
     
+    
     def get_vertices(self):
         """Return a list of all vertices in the graph."""
-        pass
+        return self.adj_list.keys()
 
     def get_neighbours(self, vertex):
         """Return a list of neighbors of a given vertex in the graph."""
-        pass    
+        return self.adj_list[vertex]
+    
     def get_size(self):
         """Return the number of vertices in the graph."""
-        pass
+        return len(self.adj_list)
     
     def breadth_first():
+        """ Return: A collection of nodes in the order they were visited."""
         pass 
+    
+    
+    def business_trip():
+        """
+    Takes in a graph and a list of cities.
+    Return: True or False, depending on whether the trip is possible with direct flights, and how much it would cost.
+        """
+        pass
