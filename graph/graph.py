@@ -1,4 +1,6 @@
 from node import Node
+from code_challeng_stack_and_Queue import Queue
+
 
 class Edge:
     def __init__(self,vertex, weight=0):
@@ -37,16 +39,41 @@ class Graph:
             output += '\n'
         return output
     
+    
     def get_vertices(self):
         """Return a list of all vertices in the graph."""
-        pass
+        return self.adj_list.keys()
 
     def get_neighbours(self, vertex):
         """Return a list of neighbors of a given vertex in the graph."""
-        pass    
+        return self.adj_list[vertex]
+    
     def get_size(self):
         """Return the number of vertices in the graph."""
-        pass
+        return len(self.adj_list)
     
-    def breadth_first():
-        pass 
+    def breadth_first(self):
+        """ Return: A collection of nodes in the order they were visited."""
+        
+        queue = Queue()
+        queue.put(self)
+
+        while not queue.empty():
+            self = queue.get()
+            #  The get() method is used to remove and return the item from the front of the queue.
+            print(self.info)
+
+            if self.left:
+                queue.put(self.left)
+
+            if self.right:
+                queue.put(self.right)
+
+    
+    
+    def business_trip():
+        """
+    Takes in a graph and a list of cities.
+    Return: True or False, depending on whether the trip is possible with direct flights, and how much it would cost.
+        """
+        pass
