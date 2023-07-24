@@ -77,3 +77,10 @@ class Graph:
     Return: True or False, depending on whether the trip is possible with direct flights, and how much it would cost.
         """
         pass
+    
+    
+    def Depth_first():
+        
+        pass 
+    
+    
