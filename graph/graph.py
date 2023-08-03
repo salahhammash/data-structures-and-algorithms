@@ -130,4 +130,4 @@ class Graph:
             for edge in self.adj_list[vertex]:
                 output += f'{edge.vertex} -----> '
             output += '\n'
-        return output
+        return output  
